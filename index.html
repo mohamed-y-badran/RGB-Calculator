@@ -1,0 +1,58 @@
+<!-- Index
+1-Head
+2-Body
+    2.1-Header
+    2.2-Main (carousel)
+    
+    2.14-Footer
+    2.15-Modal
+    2.16-JS -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Description" content="This is Food Match Calculator">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RGB</title>
+        <link rel="stylesheet" href="Css/all.css">
+        <link rel="stylesheet" href="Css/Bootstrap Icon/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="Css/fastbootstrap.min.css">
+        <link rel="stylesheet" href="Css/bootstrap.css">
+        <link rel="stylesheet" href="Css/style.css">
+    </head>
+
+    <body class="bg-body-secondary">
+
+     <main>
+      <div class="container col-6 w-50 position-absolute top-50 start-50 translate-middle rounded bg-body-tertiary p-5">
+        <legend class="text-center my-2 text-primary fs-3 text-dark text-decoration-underline fw-bold">RGB Calculator</legend>
+        <div id="rgbcolor" class="mx-auto mb-2 border border-dark border-1 rounded "></div>
+        <div class="red d-flex">
+          <label for="red" class="form-label fw-bold">Red :</label>
+          <input type="range" class="form-range" max="255" min="0" value="50" id="red">
+          <span class="text-center" id="spred">0</span>
+        </div> 
+        <div class="Green d-flex">
+          <label for="green" class="form-label fw-bold">Green :</label>
+          <input type="range" class="form-range" max="255" min="0" value="50" id="green" oninput="updatesp()">
+          <span class="text-center" id="spgreen">0</span>
+        </div>
+        <div class="blue d-flex">
+          <label for="blue" class="form-label fw-bold">Blue :</label>
+          <input type="range" class="form-range" max="255" min="0" value="50" id="blue">
+          <span class="text-center" id="spblue">0</span>
+        </div> 
+        <div class="btn-cont d-flex justify-content-center">
+          <button id="copy" class="btn border border-info border-2 btn-info rounded-2 text-white my-2 me-4 fw-bold" onclick="copyf()">Copy</button>
+          <div id="result" class="text-center text-info fw-bold my-auto text-decoration-underline "></div>
+        </div>
+      </div>
+     </main>
+
+      <script src="./js/fastbootstrap.js"></script>
+      <script src="./js/bootstrap.bundle.js"></script>
+      <script src="./js/script.js"></script>   
+
+    </body>
+</html>
